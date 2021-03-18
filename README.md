@@ -47,7 +47,7 @@ This app is pretty self-explanatory-- users can view their day planner in hour-l
 ## Screenshots
 Here are some screenshots for you to preview how the work day scheduler looks and feels:
 
-### Quiz Game UI:
+### Work Day Scheduler UI:
 ![Initial View, Top of UI](./assets/images/01-top-UI.png)
 ![Bottom of UI](./assets/images/02-bottom-UI.png)
 ![Enter & Save Appointments](./assets/images/03-save-appointments.png)
