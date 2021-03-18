@@ -21,13 +21,8 @@ function showAppointment(myHour) {
 function storeAppointment(e) {
 
     e.preventDefault();
-    console.log(e);
-    console.log(e.target.id);
 
     var btnNumber = (e.target.id).replace(/\D/g,'');
-
-    console.log(btnNumber);
-
     var text = $(`textarea#${btnNumber}`).val();
 
     if (text !== "") {
@@ -36,7 +31,6 @@ function storeAppointment(e) {
     } else {
         alert("Please enter an appointment.");    // User must enter *something*
     }
-    console.log(text);
 }
 
 
