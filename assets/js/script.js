@@ -5,7 +5,7 @@ var hoursArray = [9, 10, 11, 12, 13, 14, 15, 16, 17];   // Array of valid time s
 var currentHour = Number(moment().format("HH"));        // Current hour
 
 
-/*** Function: showAppointment, SHOULD display existing appointments (if any) from localStorage */
+/*** Function: showAppointment, displays existing appointments (if any) from localStorage */
 function showAppointment(myHour) {
     
     var btnNumber = myHour;
@@ -37,8 +37,8 @@ function storeAppointment(e) {
 /*** Main Code  ***/
 $("#currentDay").text(today.format("dddd, MMMM Do"));   // Display current date
 
+/* For loop colors in our time blocks */
 for (var hour = 9; hour < 18; hour++) {     // Loop to color in the appointment boxes based on current time
-
     var hourEl = $('#hour' + hour);         // Get a reference to our hour ID
     
     if (hour < currentHour) {               // We're in the past: color background gray
@@ -51,12 +51,11 @@ for (var hour = 9; hour < 18; hour++) {     // Loop to color in the appointment 
         hourEl.attr('class', 'present');
     }
 
-    // Display existing appointments
     showAppointment(hour);                  // Show existing appointments if any
 }                                           // End for loop
 
 
-/*** Event Listeners ***/
+/*** Button Event Listeners, call function storeAppointment when button is clicked ***/
 $('#btn9').on('click', storeAppointment);
 $('#btn10').on('click', storeAppointment);
 $('#btn11').on('click', storeAppointment);
