@@ -49,10 +49,10 @@ Here are some screenshots for you to preview how the work day scheduler looks an
 
 ### Quiz Game UI:
 ![Initial View, Top of UI](./assets/images/01-top-UI.png)
-![Bottom of UI](./assets/images/02-sample-question.png)
-![Enter & Save Appointments](03-save-appointments.png)
+![Bottom of UI](./assets/images/02-bottom-UI.png)
+![Enter & Save Appointments](./assets/images/03-save-appointments.png)
 ![Saved Appointments in Local Storage](./assets/images/04-local-storage.png)
-![Cannot Enter Blank Appointments](05-alert-blank-appt.png)
+![Cannot Enter Blank Appointments](./assets/images/05-alert-blank-appt.png)
 
 
 ## Credits
